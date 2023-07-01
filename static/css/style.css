@@ -1,0 +1,128 @@
+/* Set the font family and size for the entire document */
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+}
+
+h1{
+    color: #61cf19;
+}
+
+/* Style the data container */
+#data-container {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    /* border: 1px solid #f8f8f8; */
+    border-radius: 5px;
+}
+
+/* Style the chat form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: flex;
+}
+
+form input[type="text"] {
+    display: flex;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+form input[type="submit"] {
+    display: flex;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #61cf19;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* chat */
+ul ul {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 0;
+    border-bottom: 1px solid #ccc;
+    color: rgb(211, 43, 20);
+    border: #61cf19;
+}
+
+li {
+    color: black;
+    list-style-type: none;
+    margin-bottom: 5px;
+    padding-left: 8%;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* button */
+.toggle-switch {
+    /* border-radius: 10px; */
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    }
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    }
+
+.slider {
+    /* border-radius: 10px; */
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #fff;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    /* border-radius: 10px; */
+    background-color: #222;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+/* @import url(style_dark.css); */

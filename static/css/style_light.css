@@ -1,0 +1,18 @@
+/* Light mode */
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+body.dark-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+ul ul {
+    color: #61cf19;
+}
+
+li {
+    color: black;
+}
